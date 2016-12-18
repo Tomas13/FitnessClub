@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="kz.grandprixclub.grandprixclubapp.Fragments.FragmentRecordsNew">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@android:color/white"
+        app:tabIndicatorColor="@color/colorPrimaryPurple"
+        app:tabBackground="@drawable/tab_color_selector"
+        app:tabSelectedTextColor="@android:color/white"
+        android:layout_below="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_above="@+id/rl_footer"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_above="@+id/rl_footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Нет записей">
+
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/rl_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true" >
+        <Button
+            android:id="@+id/footer_button_record"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Записаться"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="26dp"
+            android:background="@color/colorPrimaryPurple"/>
+    </RelativeLayout>
+
+</RelativeLayout>

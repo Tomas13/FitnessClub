@@ -1,0 +1,39 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context="kz.grandprixclub.grandprixclubapp.Fragments.FragmentServices">
+
+    <TableLayout
+        android:id="@+id/tlServices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="2">
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="@drawable/row_shape">
+            <TextView
+                android:text="Дата"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="16dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Название"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="16dp"/>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

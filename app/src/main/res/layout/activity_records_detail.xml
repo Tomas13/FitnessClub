@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="kz.grandprixclub.grandprixclubapp.RecordsDetailActivity">
+
+    <!--android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout-->
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="kz.grandprixclub.grandprixclubapp.RecordsDetailActivity"
+        tools:showIn="@layout/activity_records_detail">
+
+
+        <TableLayout
+            android:id="@+id/tl_calendar_employe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_marginBottom="16dp">
+            <Spinner
+                android:id="@+id/spinner"
+                android:paddingTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:paddingBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+            <TableRow
+                android:layout_width="match_parent">
+                <TextView
+                    android:text="#"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="#2e374a"
+                    android:padding="16dp"
+                    android:background="@drawable/cell_shape"/>
+                <TextView
+                    android:text="П"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:padding="16dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/cell_shape"/>
+                <TextView
+                    android:text="В"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:padding="16dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/cell_shape"/>
+                <TextView
+                    android:text="С"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:padding="16dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/cell_shape"/>
+                <TextView
+                    android:text="Ч"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:padding="16dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/cell_shape"/>
+                <TextView
+                    android:text="П"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:padding="16dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/cell_shape"/>
+                <TextView
+                    android:text="С"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:padding="16dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/cell_shape"/>
+                <TextView
+                    android:text="В"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:padding="16dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/cell_shape"/>
+
+
+            </TableRow>
+
+        </TableLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--include layout="@layout/content_records_detail" /-->
+
+    <!--android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@android:drawable/ic_dialog_email" /-->
+
+</android.support.design.widget.CoordinatorLayout>

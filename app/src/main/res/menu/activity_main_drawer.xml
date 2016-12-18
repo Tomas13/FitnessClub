@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_personal"
+            android:icon="@drawable/ic_user"
+            android:title="@string/personal_item" />
+        <item
+            android:id="@+id/nav_shares"
+            android:icon="@drawable/ic_"
+            android:title="@string/shares_item" />
+        <item
+            android:id="@+id/nav_my_calendar"
+            android:icon="@drawable/ic_kelndar"
+            android:title="@string/calendar_item" />
+        <item
+            android:id="@+id/nav_invitation"
+            android:icon="@drawable/ic_zapisi"
+            android:title="@string/invitation_item" />
+        <item
+            android:id="@+id/nav_diary"
+            android:icon="@drawable/ic_dnevnik"
+            android:title="@string/diary_item" />
+        <item
+            android:id="@+id/nav_medical"
+            android:icon="@drawable/ic_med"
+            android:title="@string/medical_item" />
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@drawable/ic_uslugi"
+            android:title="@string/services_item" />
+        <item
+            android:id="@+id/nav_detox"
+            android:icon="@drawable/ic_detox"
+            android:title="@string/detox_item" />
+        <item android:title="" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/exit_item" />
+
+    </group>
+
+</menu>

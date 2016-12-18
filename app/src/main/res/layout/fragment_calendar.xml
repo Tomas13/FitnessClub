@@ -1,0 +1,180 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kz.grandprixclub.grandprixclubapp.Fragments.FragmentCalendar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/colorPrimaryPurple" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:textSize="10sp"
+                android:text=" - Салон" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/ColorPrimaryGreen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:textSize="10sp"
+                android:text=" - Фитнес" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/ColorPrimaryOrange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:textSize="10sp"
+                android:text=" - Баня" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/ColorPrimaryBlue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text=" - Бассейн" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tl_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="7"
+                    android:gravity="center_horizontal|center"
+                    android:background="@drawable/cell_shape" >
+                    <TextView
+                        android:id="@+id/tv_left_month"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/ic_keyboard_arrow_left_white_18dp"
+                        android:textSize="22sp"
+                        android:textColor="@android:color/white"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tv_month"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:padding="16dp"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tv_right_month"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/ic_keyboard_arrow_right_white_18dp"
+                        android:textSize="22sp"
+                        android:textColor="@android:color/white"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent">
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:padding="14dp"
+                    android:text="Пон"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:padding="14dp"
+                    android:text="Вт"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:padding="14dp"
+                    android:text="Ср"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:padding="14dp"
+                    android:text="Чет"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:padding="14dp"
+                    android:text="Пят"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:padding="14dp"
+                    android:text="Суб"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:padding="14dp"
+                    android:text="Вос"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+
+
+</ScrollView>

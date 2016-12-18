@@ -1,0 +1,36 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="kz.grandprixclub.grandprixclubapp.Fragments.FragmentDetox">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout_detox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="@android:color/white"
+            app:tabIndicatorColor="@color/colorPrimaryPurple"
+            app:tabBackground="@drawable/tab_color_selector"
+            app:tabSelectedTextColor="@android:color/white"
+            android:layout_below="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <TableLayout
+            android:id="@+id/tl_detox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="0">
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
